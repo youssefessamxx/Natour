@@ -1,0 +1,41 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  // relative to responsive - make oit easy
+  font-size: 62.5%;
+
+  // tab-land
+  @include respond(tab-land) {
+    // width < 1200px
+    font-size: 56.25%; // 9 / 16px = .5625
+  }
+  // tab-port
+  @include respond(tab-port) {
+    // width < 900px
+    font-size: 50%; // 8 / 16px = .50
+  }
+  // phone
+  // @include respond(phone) {
+  //   font-size: 40%;
+  // }
+  // big-desktop
+  @include respond(bid-desktop) {
+    // width > 1800px
+    font-size: 75%; // 12 / 16px = .75
+  }
+}
+
+body {
+  padding: 3rem;
+  box-sizing: border-box;
+
+  @include respond(phone) {
+    padding: 0;
+  }
+}

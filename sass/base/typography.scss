@@ -1,0 +1,93 @@
+@import "../abstract/variables.scss";
+@import "../abstract/mixins.scss";
+
+body {
+  font-size: 1.6rem;
+  font-weight: 400;
+  font-family: "Lato", sans-serif;
+  line-height: 1.7;
+  color: $color-gray-dark;
+}
+
+// H1
+.heading-primary {
+  color: $color-white;
+  text-transform: uppercase;
+
+  /* hide what back the element if move */
+  backface-visibility: hidden;
+
+  margin-bottom: 5.2rem;
+
+  &--main,
+  &--sub {
+    display: block;
+  }
+
+  &--main {
+    font-size: 6rem;
+    letter-spacing: 3.5rem;
+    animation: moveInLeft 1s ease-out;
+
+    @include respond(phone) {
+      font-size: 5rem;
+      letter-spacing: 1rem;
+    }
+  }
+  &--sub {
+    font-size: 2rem;
+    /* text-transform: uppercase; */
+    font-weight: 700;
+    letter-spacing: 1.75rem;
+    animation: moveInRigth 1s ease-out;
+
+    @include respond(phone) {
+      // font-size: 1rem;
+      letter-spacing: 0.5rem;
+    }
+  }
+}
+
+// H2
+.heading-secondary {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: transparent;
+  display: inline-block;
+  background-image: linear-gradient(
+    to right,
+    $color-primary-light,
+    $color-primary-dark
+  );
+  -webkit-background-clip: text;
+  transition: all 0.3s ease-out;
+
+  @include respond(tab-port) {
+    font-size: 3rem;
+  }
+
+  @include respond(phone) {
+    font-size: 2.5rem;
+  }
+
+  &:hover {
+    transform: skewY(2deg) skewX(15deg) scale(1.1);
+    text-shadow: 0.5rem 1rem 2rem rgba($color-gray-dark, 0.2);
+  }
+}
+
+// H3
+.heading-tertiary {
+  font-size: $font-size-default;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.paragraph {
+  font-size: $font-size-default;
+
+  &:not(:last-child) {
+    margin-bottom: 3rem;
+  }
+}

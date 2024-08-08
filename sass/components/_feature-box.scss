@@ -1,0 +1,30 @@
+@import "../abstract/variables.scss";
+
+.feature-box {
+  background-color: rgba($color-white, 0.8);
+  font-size: 1.5rem;
+  padding: 2.5rem;
+  border-radius: 3px;
+  text-align: center;
+  transition: all 0.3s;
+
+  &_icon {
+    height: 6rem;
+    display: inline-block;
+    background-image: linear-gradient(
+      to right,
+      $color-primary-light,
+      $color-primary-dark
+    );
+    // -webkit-background-clip: text;
+    // color: transparent;/
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-stroke: 1px #fff;
+    margin-bottom: 0.5rem;
+  }
+
+  &:hover {
+    transform: translateY(-1.5rem) scale(1.03);
+  }
+}

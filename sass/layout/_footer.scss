@@ -1,0 +1,60 @@
+@import "../abstract/variables.scss";
+
+.footer {
+  background-color: $color-gray-dark-3;
+  padding: 10rem 0;
+  font-size: 1.4rem;
+
+  &_logo-box {
+    text-align: center;
+    margin-bottom: 6rem;
+  }
+
+  &_logo {
+    width: 16rem;
+    height: auto;
+  }
+
+  &_navigation {
+    border-top: 1px solid $color-gray-light-1;
+    padding: 1.2rem;
+    display: inline-block;
+  }
+
+  &_list {
+    list-style: none;
+  }
+
+  &_item {
+    display: inline-block;
+
+    &:not(:last-child) {
+      padding-right: 1.5rem;
+    }
+  }
+
+  &_link {
+    &:link,
+    &:visited {
+      color: $color-gray-light-1;
+      background-color: $color-gray-dark-3;
+      text-decoration: none;
+      text-transform: uppercase;
+      display: inline-block;
+      transition: all 0.2s;
+    }
+
+    &:hover,
+    &:focus {
+      color: $color-primary;
+      box-shadow: 0 1rem 2rem rgba($color--dark, 0.4);
+      transform: rotate(5deg) scale(1.4);
+    }
+  }
+
+  &_copyright {
+    border-top: 1px solid $color-gray-light-1;
+    padding: 1.2rem;
+    display: inline-block;
+  }
+}

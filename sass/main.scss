@@ -1,0 +1,36 @@
+// IMPORTS
+
+// abstract folder
+@import "abstract/functions.scss";
+@import "abstract/variables.scss";
+@import "abstract/mixins.scss";
+
+// base folder
+@import "base/base.scss";
+@import "base/animations.scss";
+@import "base/typography.scss";
+@import "base/utilities.scss";
+
+// components folder
+@import "components/button.scss";
+@import "components/btn-link.scss";
+@import "components/composition.scss";
+@import "components/feature-box.scss";
+@import "components/card.scss";
+@import "components/store.scss";
+@import "components/bg-video.scss";
+@import "components/form.scss";
+@import "components/popup";
+
+// layout folder
+@import "layout/layout-system.scss";
+@import "layout/header.scss";
+@import "layout/footer.scss";
+@import "layout/navigation.scss";
+
+// pages folder
+@import "pages/home.scss";
+
+/*****************************/
+/* ANIMATIONS */
+/*****************************/

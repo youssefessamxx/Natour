@@ -1,0 +1,79 @@
+body {
+  font-size: 1.6rem;
+  font-weight: 400;
+  font-family: "Lato", sans-serif;
+  line-height: 1.7;
+  color: #777;
+}
+
+.heading-primary {
+  color: #fff;
+  text-transform: uppercase;
+  /* hide what back the element if move */
+  backface-visibility: hidden;
+  margin-bottom: 5.2rem;
+}
+.heading-primary--main, .heading-primary--sub {
+  display: block;
+}
+.heading-primary--main {
+  font-size: 6rem;
+  letter-spacing: 3.5rem;
+  animation: moveInLeft 1s ease-out;
+}
+@media (max-width: 37.5em) {
+  .heading-primary--main {
+    font-size: 5rem;
+    letter-spacing: 1rem;
+  }
+}
+.heading-primary--sub {
+  font-size: 2rem;
+  /* text-transform: uppercase; */
+  font-weight: 700;
+  letter-spacing: 1.75rem;
+  animation: moveInRigth 1s ease-out;
+}
+@media (max-width: 37.5em) {
+  .heading-primary--sub {
+    letter-spacing: 0.5rem;
+  }
+}
+
+.heading-secondary {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: transparent;
+  display: inline-block;
+  background-image: linear-gradient(to right, #7ed56f, #28b485);
+  -webkit-background-clip: text;
+  transition: all 0.3s ease-out;
+}
+@media (max-width: 56.25em) {
+  .heading-secondary {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 37.5em) {
+  .heading-secondary {
+    font-size: 2.5rem;
+  }
+}
+.heading-secondary:hover {
+  transform: skewY(2deg) skewX(15deg) scale(1.1);
+  text-shadow: 0.5rem 1rem 2rem rgba(119, 119, 119, 0.2);
+}
+
+.heading-tertiary {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.paragraph {
+  font-size: 1.6rem;
+}
+.paragraph:not(:last-child) {
+  margin-bottom: 3rem;
+}/*# sourceMappingURL=typography.css.map */
